@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Sequel";
+    src: url("Sequel_Demo.ttf");
+}
+
+body
+{
+    background-color:#003040;
+    color:white;
+    background-image:url('back.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.centerText
+{ 
+    font-size:50;
+    font-family:"Sequel";
+    text-align:center;
+}
+
+.centerTextTop
+{ 
+    font-size:100;
+    padding-top:20px;
+}
+
+.bottomSide
+{
+  position:absolute;
+  bottom:8%;
+  width:100%;
+}
+
+.btnStart
+{
+  border-color:white;
+  color:white;
+  border-radius:50%;
+  font-size:35;
+  padding:50px;
+  padding-bottom:67px;
+  padding-top:67px;
+  
+}
+
+
+#first
+{
+  color:orange;
+}
+
+.uselessWord {
+  font-size:20;
+}
+#firstPart
+{
+  opacity:1;
+}
+#secondPart
+{
+  opacity:0;
+}
+
+
+
+.written-good
+{
+  color:green;
+}
+.written-bad
+{
+  color:red;
+}
+.written-waiting
+{
+  color:orange;
+  border-bottom: 1px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+.animationFade {
+  animation-name: fadeStart;
+  animation-duration: 2s;
+
+
+  -webkit-animation: fadeStart 1.0s forwards;
+}
+
+@keyframes fadeStart {
+  from {opacity:1;}
+  to {opacity:0;}
+}
+
+.animationSecondPart {
+  animation-name: fadeSecond;
+  animation-duration: 2s;
+
+
+  -webkit-animation: fadeSecond 1.0s forwards;
+}
+
+@keyframes fadeSecond {
+  from {opacity:0; }
+  to {opacity:1;  }
+}
+
+.animationFadeRetour {
+  animation-name: fadeStart;
+  animation-duration: 2s;
+
+
+  -webkit-animation: fadeStartRetour 1.0s forwards;
+}
+
+@keyframes fadeStartRetour {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.animationSecondPartRetour {
+  animation-name: fadeSecondRetour;
+  animation-duration: 2s;
+
+
+  -webkit-animation: fadeSecondRetour 1.0s forwards;
+}
+
+@keyframes fadeSecondRetour {
+  from {opacity:1; }
+  to {opacity:0;  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 601px) {
+    .centerText .textBigger {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .centerText .textBigger {
+      font-size: 50px;
+    }
+  }
+
+
